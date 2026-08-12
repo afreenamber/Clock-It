@@ -1,0 +1,1 @@
+export const API_BASE = 'https://automatic-doodle-697pjvgxx9q6cr4jv-5000.app.github.dev';

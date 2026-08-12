@@ -4,6 +4,7 @@ const express = require('express');
    require('dotenv').config();
 
    const studySessionRoutes = require('./routes/studySessionRoutes');
+   const subjectRoutes = require('./routes/subjectRoutes');
 
    const app = express();
 
@@ -11,6 +12,7 @@ const express = require('express');
    app.use(express.json());
 
    app.use('/api/sessions', studySessionRoutes);
+   app.use('/api/subjects', subjectRoutes);
 
    mongoose.connect(process.env.MONGO_URI)
      .then(() => console.log('Connected to MongoDB'))
